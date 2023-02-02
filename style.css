@@ -1,0 +1,241 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: sans-serif;
+}
+
+.background {
+    background-image: linear-gradient(rgba(0,0,0.3),rgba(0,0,0,0.3)), url(images/background.jpg);
+    background-size: cover;
+    background-position: center;
+    width: auto;
+    height: 97vh;
+}
+
+li {
+    list-style: none;
+}
+
+.logo {
+    margin-top: 2vh;
+    margin-left: 1%;
+    height: 5vw;
+    width: 20vw;
+    cursor: pointer;
+}
+
+
+.main {
+    min-width: auto;
+    min-height: auto;
+}
+
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    background-color: black;
+    border: 1px solid black;
+    height: 3vh;
+}
+
+.nav-menu{
+    list-style-type: none;
+    margin-top: 2vh;
+    margin-right: 2vh;
+}
+
+.nav-item{
+    display: inline-block;
+}
+
+.nav-item a{
+    text-decoration: none;
+    color: rgb(255, 115, 0);
+    text-transform: uppercase;
+    margin-left: .5vh;
+    font-size: 2vw;
+    padding: 2vh, 0vh;
+    border-top: .1vh solid rgb(223, 223, 223);
+}
+
+.nav-item a:hover{
+    border-top: 0.1vh solid;
+}
+
+.aboutMe h1{
+    margin-left: 31%;
+    animation: slide-in 1s;
+    text-align: center;
+    color: white;
+    font-size: 7vw;
+    border-bottom: .1vh solid rgb(255, 115, 0);
+    position: absolute;
+    margin-top: 7vh;
+}
+
+.skills h1{
+    margin-left: 42%;
+    animation: slide-in 1s;
+    text-align: center;
+    color: white;
+    font-size: 98px;
+    border-bottom: 4px solid rgb(255, 115, 0);
+    position: absolute;
+    margin-top: 15px;
+}
+
+@keyframes slide-in {
+    from {
+        opacity: 0.2;
+        margin-left: -1000px;
+    }
+
+    to {
+        opacity: 1;
+        margin-top: 7vh;
+    }
+}
+
+.content-title h1 {
+    color: white;
+    font-size: 60px;
+    text-align: center;
+    margin-top: 10%;
+    margin-left: 28%;
+    position: absolute;
+}
+
+.content-title h2 {
+    color: white;
+    font-size: 60px;
+    text-align: center;
+    margin-top: 10%;
+    margin-left: 63%;
+    position: absolute;
+}
+
+.content-title h3:not(active) {
+    color: white;
+    font-size: 60px;
+    text-align: center;
+    margin-top: 5%;
+    margin-left: 70%;
+    position: absolute;
+    cursor: pointer;
+}
+
+.content-title h3:active {
+    animation: bee;
+}
+
+@keyframes bee {
+    from {
+        opacity: 0.2;
+        margin-left: -1000px;
+    }
+
+    to {
+        opacity: 1;
+        line-height: 113px;
+    }
+}
+
+.contents {
+    width: 450px;
+    height: 450px;
+    margin-top: 15%;
+    margin-left: 20%;
+    position: absolute;
+}
+
+.bottom {
+    background-color: black;
+    width: 100%;
+    height: 5%;
+    position: absolute;
+    margin-top: 95vh;
+}
+
+.bottom-items {
+    color: white;
+    font-size: 20px;
+    text-align: center;
+}
+
+.content {
+    width: 450px;
+    height: 450px;
+    margin-top: 15%;
+    margin-left: 55%;
+    position: absolute;
+}
+
+.develop h1{
+    display: block;
+    text-align: center;
+    margin-top: 15%;
+    margin-right: 10vh;
+    float: right;
+    color: white;
+    font-size: 5vw;
+    border-bottom: 0.4vh solid rgb(255, 115, 0);
+}
+
+.develop h2{
+    display: block;
+    text-align: center;
+    margin-left: 100%;
+    margin-right: 10vh;
+    float: right;
+    color: white;
+    font-size: 5vw;
+    border-bottom: 0.4vh solid rgb(255, 115, 0);
+}
+
+span:before {
+    content: '';
+    animation: animate infinite 10s;
+}
+
+@keyframes animate {
+    0%, 24%{
+        content: 'WEBSITE';
+        border-bottom: 0.4vh solid rgb(255, 115, 0);
+    }
+
+    25%, 49%{
+        content: 'APP';
+        border-bottom: 0.4vh solid rgb(255, 115, 0);
+    }
+
+    50%, 74%{
+        content: 'PROJECT';
+        border-bottom: 0.4vh solid rgb(255, 115, 0);
+    }
+
+    75%, 100%{
+        content: 'YOU';
+        border-bottom: 0.4vh solid rgb(255, 115, 0);
+    }
+}
+
+.aboutbox{
+    display: box;
+    margin-left: 25%;
+    text-align: center;
+    line-height: 125%;
+    background-color: rgb(128, 128, 128);
+    width: 50vw;
+    height: 25vw;
+    font-size: 2vw;
+    border: 0.5vh solid rgb(255, 115, 0);
+    position: absolute;
+    margin-top: 30vh;
+}
+
+.aboutme {
+    color: white;
+    margin: 40px;
+    margin: 5vh;
+}
